@@ -1,4 +1,4 @@
-{% set version = "0.2.3" %}
+{% set version = "0.2.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/vctrs_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/vctrs/vctrs_{{ version }}.tar.gz
-  sha256: 1c716d100a6c8e7f5aaa025ff4a5bd001b4da72ab71b85070259f31b6eb7d2de
+  sha256: dcc8b6bfd2d951d48d338a3d4deaaabfee356c0ee43169a6d6b06ea78cfe4f97
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   rpaths:
     - lib/R/lib/
@@ -54,11 +54,10 @@ test:
 about:
   home: https://github.com/r-lib/vctrs
   license: GPL-3
-  summary: Defines new notions of prototype and size that are used to provide tools for consistent
-    and well-founded type-coercion and size-recycling, and are in turn connected to
-    ideas of type- and size-stability useful for analyzing function interfaces.
+  summary: Defines new notions of prototype and size that are used to provide tools for consistent and well-founded type-coercion and size-recycling, and are in turn
+    connected to ideas of type- and size-stability useful for analyzing function interfaces.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
