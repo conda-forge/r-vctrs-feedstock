@@ -3,9 +3,9 @@ About r-vctrs
 
 Home: https://github.com/r-lib/vctrs
 
-Package license: GPL-3
+Package license: GPL-3.0-only
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Defines new notions of prototype and size that are used to provide tools for consistent and well-founded type-coercion and size-recycling, and are in turn connected to ideas of type- and size-stability useful for analyzing function interfaces.
 
