@@ -1,4 +1,4 @@
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/vctrs_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/vctrs/vctrs_{{ version }}.tar.gz
-  sha256: 624599bda2f44af65cf6ae31235692da57b46d039ed4c308a95149a2ebd84817
+  sha256: 1b68a621a2bd47d53738934ceee58bb035844f528f65e3b1a4df1dc15e0dd904
 
 build:
   merge_build_host: true  # [win]
