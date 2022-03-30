@@ -1,4 +1,4 @@
-{% set version = "0.3.8" %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/vctrs_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/vctrs/vctrs_{{ version }}.tar.gz
-  sha256: 7f4e8b75eda115e69dddf714f0643eb889ad61017cdc13af24389aab2a2d1bb1
+  sha256: 89dee789aad9b06b2f314ece8de2d6c261a5cd5729a8a00be99d5b2b85c8542f
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -50,12 +50,10 @@ test:
 about:
   home: https://vctrs.r-lib.org/
   license: MIT
-  summary: Defines new notions of prototype and size that are used to provide tools for consistent
-    and well-founded type-coercion and size-recycling, and are in turn connected to
-    ideas of type- and size-stability useful for analysing function interfaces.
+  summary: Defines new notions of prototype and size that are used to provide tools for consistent and well-founded type-coercion and size-recycling, and are in turn connected to ideas of type- and size-stability useful for analysing function interfaces.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
