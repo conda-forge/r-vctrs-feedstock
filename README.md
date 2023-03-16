@@ -1,11 +1,22 @@
+About r-vctrs-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-vctrs-feedstock/blob/main/LICENSE.txt)
+
 About r-vctrs
-=============
+-------------
 
 Home: https://vctrs.r-lib.org/
 
 Package license: MIT
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-vctrs-feedstock/blob/main/LICENSE.txt)
+Summary: Defines new notions of prototype and size that are used to provide tools for consistent and well-founded type-coercion and size-recycling, and are in turn connected to ideas of type- and size-stability useful for analysing function interfaces.
+About r-vctrs
+-------------
+
+Home: https://vctrs.r-lib.org/
+
+Package license: MIT
 
 Summary: Defines new notions of prototype and size that are used to provide tools for consistent and well-founded type-coercion and size-recycling, and are in turn connected to ideas of type- and size-stability useful for analysing function interfaces.
 
