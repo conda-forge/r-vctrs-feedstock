@@ -1,4 +1,4 @@
-{% set version = "0.7.2" %}
+{% set version = "0.7.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/vctrs_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/vctrs/vctrs_{{ version }}.tar.gz
-  sha256: 46452f7f5f800e10ad09c287c488a4f6d887c28ef14bcff4bae4f56e6ba57fce
+  sha256: b45078413e06ac624dddb7221a3a43908b405c8abec09822cb86638d30b0435b
 
 build:
   number: 0
